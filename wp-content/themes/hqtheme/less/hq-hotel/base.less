@@ -1,0 +1,967 @@
+
+/* HQTheme Styles */
+
+/* ::selection {
+background: #93d6c5!important; WebKit/Blink Browsers
+}
+::-moz-selection {
+background: #93d6c5!important; Gecko Browsers
+} */
+
+#main-wrapper{
+    .container-fixed();
+}
+
+.clear{
+    clear: both;
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+    margin: 10px 0;
+}
+
+p {
+    color: @basic-font-color;
+    font-size: @font-size-12px;
+}
+
+a {
+    color: @box-header-pink;
+    text-decoration: underline;
+    font-size: @font-size-12px;
+
+    &:hover {
+        color: @box-header-pink;
+        text-decoration: none;
+    }
+}
+
+blockquote {
+    border: none;
+    border-bottom: 1px solid @white-color;
+    min-height: 70px;
+    position: relative;
+    border: 0 none;
+    &:before {    
+        font-family: 'FontAwesome';
+        position: absolute;
+        content: '\f10e';
+        font-size: 66px;
+        line-height: 66px;
+        left: 5px;
+    }
+    p{
+        margin-left: 70px;
+    }
+}
+
+table{
+    width: @width-100;
+    th{
+        padding: 5px;
+    }
+    td{
+        //border: 1px solid @white-color;
+        padding: 5px;
+    }
+}
+
+dl dd{
+    margin-left: 1em;
+}
+
+address{
+    font-style: italic;
+}
+
+q{
+    font-style: italic;
+}
+cite{
+    font-style: italic;
+}
+
+ins{
+    text-decoration: none;
+    padding: 2px;
+}
+
+.twitter-tweet{
+    width: @width-100!important;
+}
+
+.footer_bottom,
+.header_topline{
+    font-size: @font-size-12px;
+    .social{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .socials,
+    .search,
+    .socials-search{
+        padding-top: 8px;
+    }
+    li{
+        margin: 0 5px;
+    }
+}
+.header_topline{
+    .text{
+        padding-top: 8px;
+    }
+}
+.footer_bottom{
+    padding-top: 5px;
+    margin-top: 3px;
+    .text{
+        padding-bottom: 8px;
+    }
+}
+
+.hqbtn {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: @btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
+    white-space: nowrap;
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+    .user-select(none);
+
+    &,
+    &:active,
+    &.active {
+        &:focus {
+            .tab-focus();
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: @btn-default-color;
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        outline: 0;
+        background-image: none;
+        .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+pointer-events: none; // Future-proof disabling of clicks
+.opacity(.65);
+.box-shadow(none);
+}
+}
+/* ================================================================================================================ */
+.font-style {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text-style {
+    text-transform: none;
+    text-decoration: none;
+}
+
+.site-content {
+    margin-top: -150px;
+}
+
+/* BREADCRUMB */
+.breadcrumb-path a, .post-page {
+    color: @basic-font-color;
+    text-decoration: none;
+    text-transform: lowercase;
+    margin: 0px 3px;
+}
+
+.post-page.current-item {
+    color: @white-color;
+}
+
+.global-content-header {
+  .font-style();
+  font-family: 'georgia';
+  font-size: @font-size-18px;
+  color: @box-header-pink;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-shadow: @text-shadow-color 1px 1px 1px;
+  border-bottom: 1px solid @text-shadow-color;
+}
+
+/* GLOBAL TOP HEAEDER */
+.header_topline {   
+    .content-wrapper {
+        max-width: 960px!important;
+        width: @width-100;
+
+        .menu-header-top-icons-container {
+
+            ul {
+                margin: 0px;
+                margin-left: -10px;
+
+                li {
+                    border:0px;
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 10px;
+
+                    a {
+                        color: @light-brown;
+                        display: inline-block;
+
+                        &:before {
+                            font-family: 'FontAwesome';
+                            margin-right: 10px;
+                            position: absolute;
+                            color: @light-beige;
+                            text-shadow: #333 2px 2px 2px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .home-icon {
+
+                    a {
+                        &:before {
+                            content: "\f015";
+                        }
+                    }
+                }
+
+                .reservation-icon {
+                    a {
+                        &:before {
+                            content: "\f0f3";
+                        }
+                    }
+                }
+
+                .promotions-icon {
+                    a {
+                        &:before {
+                            content: "\f02b";
+                        }
+                    }
+                }
+
+                .restaurant-icon {
+                    a {
+                        &:before {
+                            content: "\f0f5";
+                        }
+                    }
+                }
+
+                .contact-icon {
+                    a {
+                        &:before {
+                            content: "\f041";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget_polylang {
+    ul {
+        margin: 0px;
+
+        li {
+            display: inline-block;
+            border-bottom: 0px;
+            line-height: 20px;
+
+            a {
+                text-decoration: none;
+                color: @menu-header-font;
+            }
+        }
+    }
+}
+/* GLOBAL TOP HEAEDER */
+
+/* GLOBAL MAIN HEADER */
+.main_header {
+    .content-wrapper {
+        max-width: none!important;
+        width: @width-100!important;
+
+        .text-center {
+            background: @light-beige;
+            box-shadow: 0px 2px 2px 0px #261B1B;
+            margin-bottom: 5px; 
+
+            .mega-menu-wrap {
+                width: @width-100!important;
+                margin: 0 auto!important;
+                max-width: 960px!important;
+            }
+        }
+
+        .text-left {
+            background: @dark-brown;
+
+            .site-title {
+                width: @width-100!important;
+                margin: 0 auto!important;
+                max-width: 960px!important;
+                height: 155px;
+                line-height: 140px;
+                display: block;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.mega-menu-item:hover {
+    box-shadow: 0px -5px 10px #5C5248, 0px -5px 10px #5C5248!important;
+}
+
+li.mega-current_page_item {
+    &:extend(.mega-menu-item:hover);
+
+    a {
+        background: @footer-font-color!important;
+        color: @menu-header-font!important;
+    }
+}
+/* GLOBAL MAIN HEADER */
+
+/* GLOBAL SIDEBAR MENUS */
+.heading {
+
+    h3 {
+        font-size: @font-size-18px;
+        color: @basic-font-color;
+        text-transform: uppercase;
+        text-shadow: @dark-brown 1px 1px 1px;
+        padding: 0 10px;
+        margin-bottom: 0px;
+        font-style: normal;
+    }
+}
+
+.menu-hotel-bg-container, 
+.menu-accomodation-bg-container, 
+.menu-promotions-bg-container, 
+.menu-reservation-bg-container, 
+.menu-events-bg-container, 
+.menu-restaurant-bg-container, 
+.menu-contact-bg-container {
+
+    ul {
+        list-style: none;
+
+        li {
+            border-top: 1px solid @light-brown;
+            border-bottom: 1px solid @border-color;
+            margin: 0px 0;
+            padding: 5px 0px;
+
+            a {
+                &:extend(.font-style);
+                color: @basic-font-color;
+                font-size: @font-size-14px;
+                text-decoration: none;
+                text-shadow: @dark-brown 1px 1px 1px;
+                width: @width-100;
+                display: block;
+                text-transform: lowercase;
+                padding-left: 15px;
+            }
+
+            &:first-child {
+                position: relative;
+                border-top: 1px solid @border-color;
+
+                &:after {
+                    content: " ";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    border-top: 1px solid @light-brown;
+                }  
+            }
+
+            &:last-child {
+                position: relative;
+                border-bottom: 1px solid @light-brown;
+
+                &:after {
+                    content: " ";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    border-bottom: 1px solid @border-color;
+                }  
+            }
+
+            ul.sub-menu {
+
+                li {
+
+                    a {
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: 12px;
+                    }
+
+                    &:first-child {
+                        position: relative;
+                        border-top: 1px solid @border-color!important;
+                    }
+
+                    &:last-child {
+                        border-bottom: 0px;
+                    }
+                }
+            } 
+        }
+
+        li.current_page_item {
+            background: url('../images/menu-active-arrow.png') no-repeat right center;
+            a {
+                color: @white-color;
+            }
+        }
+    }
+}
+
+.menu-restaurant-bg-container {
+    ul {
+        li {
+            &:last-child {
+              border-top: 1px solid #5e5449;
+          }
+      }
+  }
+}
+/* GLOBAL SIDEBAR MENUS */
+
+
+/* GLOBAL CONTENT HEADER */
+.entry-header {
+
+    h1 {
+        &:extend(.font-style);
+        position: absolute;
+        background: @box-header-pink;
+        font-size: @font-size-18px;
+        color: @white-color;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        text-shadow: @text-shadow-color 1px 1px 1px;
+        border-bottom: 0px;
+        top: 40px;
+        left: 5px;
+        z-index: 2;
+    }
+
+    .hq-slider {
+        margin-bottom: 10px;
+    }
+}
+
+.entry-content {
+    background: @dark-brown;
+    padding: 15px;
+}
+/* GLOBAL CONTENT HEADER */
+
+
+.home-bottom {
+    .widget_text {
+        width: 48%;
+        display: inline-block;
+
+        &:first-child {
+            margin-right: 24px;
+        }
+    }
+}
+/* HOME PAGE SHARES FB AND TRIPADVISOR */
+#shares {
+    
+    .tripadvisor-share {
+        float: left;
+    }
+
+    .facebook-share {
+        margin-left: 10px;
+        display: inline-block;
+    }
+}
+ 
+
+/* HOME PAGE SHARES FB AND TRIPADVISOR */
+
+
+
+/* GLOBAL FORMS FIELDS */
+
+/* INPUTS AND SELECTS */
+.ninja-forms-cont .ninja-forms-form-wrap input, 
+.ninja-forms-cont .ninja-forms-form-wrap select {
+    background: @menu-header-font;
+    color: @black-color;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    height: 35px;
+}
+
+.ninja-forms-cont .ninja-forms-form-wrap label {
+    color: @white-color;
+    font-size: @font-size-12px;
+    padding-left: 10px;
+
+    span {
+        color: @box-header-pink;
+    }
+}
+
+/* TEXTAREA */
+.ninja-forms-cont .ninja-forms-form-wrap textarea {
+    &:extend(.ninja-forms-cont .ninja-forms-form-wrap input);
+    height: 100px;
+    resize: none;
+}
+
+/* CHECKBOX */
+.ninja-forms-cont .ninja-forms-form-wrap input[type=checkbox] {
+    height: 15px;
+}
+
+.ninja-forms-cont .ninja-forms-form-wrap input[type=submit] {
+    &:extend(.font-style);
+    background: -webkit-linear-gradient(@first-gradient-color, @second-gradient-color); 
+    background: -o-linear-gradient(@first-gradient-color, @second-gradient-color); 
+    background: -moz-linear-gradient(@first-gradient-color, @second-gradient-color); 
+    background: linear-gradient(@first-gradient-color, @second-gradient-color); 
+    border: 1px solid @border-gradient-color;
+    color: @menu-header-font;
+    font-size: @font-size-16px;
+    padding: 10px 80px;
+    height: 45px;
+}
+
+.half-field-right-wrap {
+    width: 47%;
+    display: inline-block;
+}
+
+.half-field-left-wrap {
+    &:extend(.half-field-right-wrap);
+    margin-right: 28px;
+}
+
+.field-group-header, 
+.ninja-forms-form-title {
+    &:extend(.font-style);
+    font-size: @font-size-18px;
+    color: @box-header-pink;
+    padding: 0px 0px 10px 0px;
+    margin-bottom: 20px; 
+    text-shadow: @text-shadow-color 1px 1px 1px;
+    border-bottom: 1px solid @light-brown;
+    clear: both;
+}
+/* GLOBAL FORMS FIELDS */
+
+
+
+
+/* SIDEBAR BOXES */
+.global-box-model {
+    width: 100%;
+    background: @dark-brown;
+    padding: 10px;
+    margin: 10px 0px;
+
+    h3 {
+        &:extend(.font-style);
+        color: @box-header-pink;
+        text-transform: none;
+        border-bottom: 1px solid @light-brown;
+        padding: 0px 0px 5px 0px;
+        font-size: @font-size-16px;
+        margin: 0px 5px;
+    }
+
+    h4 {
+        color: @white-color;
+        &:extend(.font-style);
+        text-transform: none;
+        padding: 5px;
+        font-size: @font-size-12px;
+        margin-bottom: 0px;
+    }   
+
+    p {
+        padding: 5px;
+        color: @menu-header-font;
+        font-size: @font-size-11px;
+        margin: 0px;
+    }
+
+    a {
+        &:extend(.ninja-forms-cont .ninja-forms-form-wrap input[type=submit]);
+        &:extend(.text-style);
+        display: block;
+        margin: 5px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px 0px;
+
+        span {
+            color: @box-header-pink;
+            padding-left: 11px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.box-link {
+    text-decoration: none;
+}
+
+.global-box-model-images {
+    &:extend(.global-box-model);
+    padding: 10px 10px 15px 10px;
+
+    .box-image {
+        margin-left: 5px;
+        margin-top: 8px;
+    }
+
+    .line-bkg {
+        width: 110%;
+        height: 50px;
+        background: url(../images/tripadvisor-bkg-img.png) 5% 50% no-repeat;
+        margin-left: -25px;
+    }
+
+    img {
+        float: left;
+    }
+
+    h3 {
+        padding: 0px 10px;
+        color: @white-color;
+        font-size: @font-size-14px;
+        margin: 5px 0px;
+        display: block;
+        float: left;
+        width: 70%;
+    }
+
+    p {
+        padding: 0px 10px;
+        margin: 0px;
+        font-size: @font-size-11px;
+        color: @basic-font-color;
+        display: inline-block;
+        width: 70%;
+    }
+}
+
+
+/* TRIPADVISOR BIG BOX */
+.wrapper-tripadvisor-widget {
+    background: @dark-brown;
+    margin-top: 10px;
+    width: 100%;
+
+    h3 {
+        &:extend(.font-style);        
+        font-size: @font-size-14px;
+        border-bottom: 0px;
+        padding: 15px 10px;
+        margin: 0px;
+        color: @box-header-pink;
+    }
+
+    .tripadvisor-bkg {
+        width: 98%;
+        height: 60px;
+        float: left;
+        margin-left: -15px;
+        background-size: 100%;
+        background-position: center;
+        background: url(../images/tripadvisor-bkg-img.png) 5% 50% no-repeat;
+
+        .tripadvisor-bkg-img {
+          width: 55%;
+          float: left;
+          background: url(../images/tripadvisor-horizontal.png) 10% 90% no-repeat;
+          height: 50px;
+          margin-left: 20px;
+          background-size: 100%;
+          background-position: center;
+      }
+  }
+
+  .wrapper-number {
+    float: right;
+    width: 39%;
+    text-align: center;
+    background: url(../images/tripadvisor-popularity-index.png)35% 62% no-repeat;
+    padding: 18px 0px;
+    margin-top: -100px;
+    margin-right: 3px;
+    background-size: 100%;
+    background-position:center;
+
+    .big-number {
+        &:extend(.font-style);
+        color: @box-header-pink;
+        font-size: 22px;
+        font-family: 'georgia';
+    }
+
+    p {
+        font-size: @font-size-11px;
+        &:extend(.font-style);
+
+        span {
+         &:extend(.font-style);
+         font-size: @font-size-11px;
+         color: @box-header-pink;
+         font-weight: normal;
+     }
+ }
+}
+
+.tripadvisor-articles {
+    padding: @padding-0px;
+    display: inline-block;
+    margin-top: -10px;
+
+    li {
+        list-style: none;
+        border-bottom: 1px solid @light-brown;
+        margin: 0px 15px;
+
+        h4 {
+            font-size: @font-size-12px;
+            color: @white-color;
+            font-weight: bold;
+            margin: 0px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: @font-size-11px;
+            color: @menu-header-font;
+            line-height: 1.3;
+        }
+    }
+}
+
+ul {
+    display: block;
+    padding: @padding-0px;
+    a {
+        &:extend(.font-style);
+        color: @white-color;
+        font-size: @font-size-10px;
+        text-decoration: none;
+        padding: 5px 15px 15px 15px;
+
+        span {
+            font-style: normal;
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .tripadvisor-write-review {
+        float: right;
+        display: inline-block;
+
+        span {
+            color: @box-header-pink;
+        }
+    }
+
+    .tripadvisor-read-more {
+        display: inline-block;
+
+        span {
+            color: @box-header-pink;
+        }
+    } 
+}
+}
+/* TRIPADVISOR BIG BOX */
+
+/* SIDEBAR BOXES */
+
+
+/* PROMOTIONS */
+.promotions, 
+.wrapper-home-promotions {
+    padding: @padding-0px;
+
+    .promo-list {
+        list-style: none;
+
+        h3 {
+            &:extend(.font-style);
+            font-size: @font-size-14px;
+            color: @white-color;
+            text-shadow: #5f554a 1px 1px 1px;
+        }
+
+        p {
+            font-style: @font-size-12px;
+        }
+
+        a {
+            &:extend(.font-style);
+            display: block;
+            text-align: right;
+            padding: 0px 15px;
+            font-size: @font-size-10px;
+            color: @white-color;
+            text-decoration: none;
+            text-shadow: #5f554a 1px 1px 1px;
+
+            span {
+                color: @box-header-pink;
+                margin-left: 5px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+/* PROMOTIONS */
+
+
+/* SLIDER PAGINATION */
+.hq-slider-nav {
+
+    .hq-slider-pagination {
+        right: 10px;
+        left: auto;
+        top: 90%;
+        width: 100%;
+        transition: all .0s;
+        text-align: right;
+
+        span {
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 2px solid @basic-font-color;
+        }
+
+        span:hover, 
+        span.swiper-active-switch {
+            background-position: 0px;
+        }
+    }
+}
+
+span.swiper-visible-switch {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* SLIDER PAGINATION */
+
+
+
+/* RESTAURANT MENU */
+
+h3.menu-section {;
+    background: @basic-font-color;
+    color: @dark-brown;
+    text-shadow: @white-color 1px 1px 1px;
+    font-size: @font-size-14px;
+    text-align: left;
+    padding: 5px 10px;
+    margin: 0px;
+    &:extend(.font-style);
+}
+
+table.menu-section {
+    margin-bottom: 20px; 
+    td {
+        border: 0px;
+    }
+
+    tr:nth-child(odd) {
+        background: @dark-brown;
+    }
+
+    tr:nth-child(even) {
+        background: @light-brown;
+    }
+}
+
+/* RESTAURANT MENU */
+
+
+.whiteheading {
+  color: @white-color;
+  font-family: 'georgia';
+  font-size: @font-size-14px;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px @text-shadow-color;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+
+    .content-wrapper {
+
+        .heading {
+            padding: @padding-0px;
+
+            h3 {
+                text-shadow: 0px 0px 0px;
+                padding: @padding-0px;
+                margin: 15px 0px 5px 0px;
+                font-size: @font-size-14px;
+                border-bottom: 0px;
+            }
+        }
+
+        ul {
+
+            li {
+                border-bottom: 0px;
+                padding: @padding-0px;
+            }
+        }
+    }
+}
+/* FOOTER */

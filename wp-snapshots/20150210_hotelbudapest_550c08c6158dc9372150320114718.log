@@ -1,0 +1,75 @@
+********************************************************************************
+PACKAGE-LOG: 2015-03-20 11:47:47
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.12
+WORDPRESS:	4.1.1
+PHP INFO:	5.5.9 | SAPI: apache2handler
+SERVER:		Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+MEMORY STACK: 22.5MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP (query limit - 100)
+MYSQLDUMP:    Is Supported
+MYSQLTIMEOUT: 5000 
+TABLES: total:18 | filtered:0 | create:18 
+FILTERED: [] 
+SQL CREATED: 20150210_hotelbudapest_550c08c6158dc9372150320114718_database.sql 
+SQL FILE SIZE: 1.84MB 
+SQL FILE TIME: 2015-03-20 11:47:49 
+SQL RUNTIME: 1.49 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/xampp/htdocs/hotelbudapest 
+ARCHIVE FILE: 20150210_hotelbudapest_550c08c6158dc9372150320114718_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	60.66MB 
+STATS:	Dirs 339 | Files 3,282 | Links 0 
+SQL ADDED: 20150210_hotelbudapest_550c08c6158dc9372150320114718_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3621
+    [filename] => C:\xampp\htdocs\hotelbudapest\wp-snapshots\tmp\20150210_hotelbudapest_550c08c6158dc9372150320114718_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 30.93MB 
+ARCHIVE RUNTIME: 12.35 sec. 
+MEMORY STACK: 23.75MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [C:/xampp/htdocs/hotelbudapest/wp-snapshots/tmp/20150210_hotelbudapest_550c08c6158dc9372150320114718_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.84MB 
+Installer File: 316.88KB 
+Archive File: 30.93MB  
+
+********************************************************************************
+RECORD ID:[4]
+TOTAL PROCESS RUNTIME: 17.86 sec.
+PEAK PHP MEMORY USED: 25.75MB
+DONE PROCESSING => 20150210_hotelbudapest 2015-03-20 11:48:05
+ 
